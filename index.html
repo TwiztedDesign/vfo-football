@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<script src="https://unpkg.com/vff"></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vff@1"></script>
+    <script src="https://unpkg.com/vff-clocks@1"></script>
+    <script src="https://unpkg.com/vff-sport-teams@0.0.4"></script>
+
+    <script src="js/script.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Videoflow Overlay</title>
+</head>
+<body>
+
+
+    <div id="banner-bg"></div>
+    <div id="banner">
+        <div class="away team">
+            <div class="logo"></div>
+            <div class="name">Mason</div>
+            <div class="tennis">15-0</div>
+            <div class="score">
+                <div class="possession"></div>
+                <div class="number">7</div>
+            </div>
+            <div class="timeouts">
+                <div class="timeout"></div>
+                <div class="timeout"></div>
+                <div class="timeout"></div>
+            </div>
+        </div>
+        <div class="home team">
+            <div class="logo"></div>
+            <div class="name">New Deal</div>
+            <div class="tennis">15-0</div>
+            <div class="score">
+                <div class="possession active"></div>
+                <div class="number">0</div>
+            </div>
+            <div class="timeouts">
+                <div class="timeout"></div>
+                <div class="timeout"></div>
+                <div class="timeout"></div>
+            </div>
+        </div>
+        <div class="quarter">1st</div>
+        <div class="quarter-clock">3:57</div>
+        <div class="play-clock">
+            <countdown-clock id="play-clock" vff-control="game.playClock"></countdown-clock>
+        </div>
+        <div class="possession">
+            <div class="down">3rd</div>
+            <span class="amp">&nbsp;&&nbsp </span>
+            <div class="distance">11</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
